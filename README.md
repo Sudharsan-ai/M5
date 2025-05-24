@@ -139,7 +139,7 @@ int main() {
 
 ## AIM:
 
-Write C program for the below pyramid string pattern. Enter a string: PROGRAM Enter number of rows: 5 P R O G R A M P R O G R A M P R O G R A M
+Write C program for the below pyramid string pattern. Enter a string: PROGRAM Enter number of rows: 5  P  R O  G R A  M P R O  G R A M P  R O G R A M
 
 ## ALGORITHM:
 
@@ -150,11 +150,36 @@ Write C program for the below pyramid string pattern. Enter a string: PROGRAM En
 5.	End the program.
 
 ## PROGRAM:
+```
+//Sudharsan S
+ //Reg no : 212224040334 
+#include <stdio.h>
+int main() {
+    char str[100];
+    printf("Enter the string: ");
+    scanf("%s",str);
+    int r, si=0;
+    printf("\n\nEnter the number of rows: ");
+    scanf("%d",&r);
+    for(int i=0;i<r+1;i++){
+        for(int j=0;j<r-i;j++){
+            printf(" ");
+        }
+        for(int j=0;j<=i;j++){
+            printf("%c ",str[si++]);
+            if(str[si]=='\0')si=0;
+        }
+      printf("\n");  
+    }
+    
+}
 
+```
 
  ## OUTPUT
 
- 
+ ![image](https://github.com/user-attachments/assets/be050621-85c6-4f36-bffd-57f8fc670618)
+
 
 ## RESULT
 
