@@ -9,18 +9,22 @@ Write a C program to convert a 23.65 into 25 using pointer
 4.	Print the modified value.
 
 ## PROGRAM:
+```
+//Sudharsan S
+//Reg no : 212224040334
+#include <stdio.h>
+int main() {
+   double a = 23.65;
+   double *ptr = &a;
+   *ptr = 25.0;
+   printf("Modified value: %.1f",a);
+  
+}
+```
 
 ## OUTPUT:
  	
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/ae497319-f960-4802-b117-dea1ddf94655)
 
 
 ## RESULT:
@@ -45,14 +49,33 @@ Write a C program to calculate the Product of first 12 natural numbers using Rec
 6.	Print the result, indicating it is the product of the first 12 natural numbers.
 
 ## PROGRAM:
+```
+// Sudharsan S
+// Reg no : 212224040334
+#include <stdio.h>
+
+int natuprod(int n);
+
+int main() {
+    int n = 12;
+    printf("Product of first %d natural numbers is: %d\n", n, natuprod(n));
+}
+
+int natuprod(int n) {
+    if(n <= 1)
+        return 1;
+    else
+        return n * natuprod(n - 1);
+}
+```
 ## OUTPUT:
-         		
+![image](https://github.com/user-attachments/assets/2f332fa1-24f3-4942-8e14-cf6cc23a0d0b)
+
+          
 ## RESULT:
 
 Thus the program has been executed successfully.
  
- 
-
 
 # EX-23-ARRAYS AND ITS OPERATIONS
 
@@ -68,14 +91,46 @@ Write C Program to find Sum of each row of a Matrix
 4.	Print the sum for each row.
 
 ## PROGRAM:
+```
+//Sudharsan S
+ //Reg no : 212224040334 
+#include <stdio.h>
+int main() {
+    int r,c;
+    printf("Enter the number of rows: ");
+    scanf("%d",&r);
+    printf("\nEnter the number of columns: ");
+    scanf(" %d",&c);
+    int arr[r][c];
+    printf("\n");
+    for(int i=0;i<r;i++){
+        printf("Enter the elements of Row %d: ",i+1);
+        for(int j=0;j<c;j++){
+            scanf("%d",&arr[i][j]);
+        }
+        printf("\n") ;
+   
+    }
+    for(int i=0;i<r;i++){
+        int sum = 0;
+        for(int j=0;j<c;j++){
+            sum += arr[i][j];
+        }
+        printf("The sum of the elements in Row %d is: %d \n\n",i+1,sum);
+        
+    }
+    
+}
 
+```
 
 
 ## OUTPUT
 
 
  
- 
+ ![Uploading image.png…]()
+
 
  ## RESULT
  
