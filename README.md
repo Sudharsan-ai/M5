@@ -126,10 +126,8 @@ int main() {
 
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/a6bdbfaa-fb54-44a9-934e-7fcc8acfbac1)
 
-
- 
- ![Uploading image.png…]()
 
 
  ## RESULT
