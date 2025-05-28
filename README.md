@@ -211,10 +211,24 @@ Step 5: Loop from i = 0 to i < n:
 Step 6: End the program.
 
 ## PROGRAM
+```
+//Sudharsan S
+ //Reg no : 212224040334 
+#include <stdio.h>
+int main() {
+    int arr[6];
+    int *ptr = arr;
+    printf("Enter only 6 elements : ");
+    for(int i=0;i<6;i++) scanf("%d ",&ptr[i]);
+    for(int i=0;i<6;i++) printf("%d\n",*(ptr + i));
+    return 0;
+}
 
+```
 ## OUTPUT
 
- 
+ ![image](https://github.com/user-attachments/assets/746b4fbf-b2de-4df6-a82c-aa844791dbae)
+
 
 ## RESULT
 
